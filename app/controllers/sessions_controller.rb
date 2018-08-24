@@ -6,15 +6,14 @@ class SessionsController < ApplicationController
       else
         redirect_to books_path
       end
-    end
+    endasxsadsasadsa
   end
 
   def create
     user = User.find_by email: sess[:email].downcase
     if user&.authenticate(sess[:password])
       log_in user
-      sess[:remember_me] == "1" ? remember(user) : forget(user)
-      redirect_back_or user
+      sess[:remember_me] == "1" ? remember(user) : forget(user)werewrewr4
     else
       flash.now[:danger] = t "flash_invalid"
       render :new

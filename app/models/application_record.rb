@@ -1,4 +1,8 @@
 class ApplicationRecord < ActiveRecord::Base
   self.abstract_class = true
 end
-whewfihiwefkhwefwek
+
+wqqw
+
+asdsad
+sa
